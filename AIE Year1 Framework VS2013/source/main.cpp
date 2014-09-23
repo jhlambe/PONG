@@ -43,7 +43,7 @@ NEED TO FIGURE OUT HOW TO PASS VAR INTO SCORE AND THEN DRAW THAT TO SCREEN.
 const char* enterPlay = "Press Enter to Play";
 const char* menuScreen = "Menu";
 const char* pong = "Pong";
-const char* gQuit = "Esc to Quit";
+const char* gQuit = "Space Bar to Quit";
 
 /*
 SCREEN SIZE
@@ -147,7 +147,7 @@ struct player{
 	unsigned int iMoveDownKey; //DOWN
 	unsigned int iUpMovementExtreme; // iScreenHeight
 	unsigned int iDownMovementExtreme; //iscreenBottom
-	int cPointsWon; //
+	char cPointsWon; // use atoi to convert to int 
 	const char* numScore1 = "00000"; //NEED HELP HERE NOT SURE HOW TO PASS  
 	const char* numScore2 = "00000"; //NEED HELP HERE
 	const char* numHScore = "00000";  //NEED HELP HERE
